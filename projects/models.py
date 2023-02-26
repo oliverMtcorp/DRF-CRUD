@@ -7,3 +7,6 @@ class Producto(models.Model):
     descripcion_producto = models.TextField()
     precio_producto = models.DecimalField(max_digits=6, decimal_places=2)
     cantidad_stock = models.IntegerField()
+
+    def __str__(self):
+        return self.nombre_producto
